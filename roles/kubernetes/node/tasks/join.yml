@@ -13,3 +13,5 @@
   register: join_cluster
   notify:
     - Recreate kube-dns
+  kubeletExtraArgs:
+    cloud-provider: aws
